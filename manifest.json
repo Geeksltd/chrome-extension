@@ -1,8 +1,7 @@
 {
   "name": "My Extension Name",
   "manifest_version": 2,
-  "version": "0.0",
-  "default_locale": "en",
+  "version": "1.0",
 
   "background": {
     "persistent": false,
