@@ -20,3 +20,7 @@ That's it! You can now test the extension and develop it further!
 - You cannot touch the DOM in `background.js`. Only `content.js` can access the DOM.
 - If you need to access anything (e.g. click on a link) in `background.js`, you should ***send a chrome tab message to the content tab*** and do it there.
 
+```javascript
+var message = { command: 'click-on-something-for-me!', arg1: '...' };
+chrome.tabs.sendMessage(tabId, message, function (response) { callBack(tab, tabId, response) });
+```
