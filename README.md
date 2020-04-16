@@ -14,3 +14,8 @@ To get started, follow:
 7. Click on `Load unpacked` and select the folder of your extension.
 
 That's it! You can now test the extension and develop it further!
+
+## Beginner Tips
+
+- You cannot touch the DOM in `background.js`. Only `content.js` can access the DOM. If you need to access anything (e.g. click on a link) from the background.js file, you should *send a chrome tab message to the content tab*. 
+
